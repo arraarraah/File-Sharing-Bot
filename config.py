@@ -56,7 +56,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME :</b>\n{uptime}"
 
 
 
-USER_REPLY_TEXT = "❌Jangan Kirimkan Saya Pesan Secara Langsung Saya Hanya Bot Berbagi File !"
+USER_REPLY_TEXT = "❌ mau ngapain? ❌ "
 
 START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nSaya dapat menyimpan file pribadi di saluran tertentu dan pengguna lain dapat mengaksesnya melalui tautan khusus.")
 
@@ -89,14 +89,4 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 def LOGGER(name: str) -> logging.Logger:
     return logging.getLogger(name)
-   
 
-
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper

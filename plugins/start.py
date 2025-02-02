@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
                 pass
 
 
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>PENTING!</u> ❗️</b>\n\nVideo/File Ini Akan Dihapus Dalam {file_auto_delete} (Karena Masalah Hak Cipta).\n\n📌 Harap Teruskan Video/File Ini Ke Tempat Lain Dan Mulai Mengunduh Di Sana.")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>PENTING!</u> ❗️</b>\n\nVideo Ini Akan Dihapus Dalam {file_auto_delete} (Karena Masalah Hak Cipta).\n\n📌 Ambil link lagi di halaman utama jika kehabisan waktu.")
 
         # Schedule the file deletion
         asyncio.create_task(delete_files(madflix_msgs, client, k))
@@ -233,12 +233,4 @@ async def delete_files(messages, client, k):
         except Exception as e:
             print(f"The attempt to delete the media {msg.id} was unsuccessful: {e}")
     # await client.send_message(messages[0].chat.id, "Your Video / File Is Successfully Deleted ✅")
-    await k.edit_text("Video / File Anda Berhasil Dihapus ✅")
-
-
-
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
+    await k.edit_text("Video Berhasil Dihapus Otomatis ✅")
